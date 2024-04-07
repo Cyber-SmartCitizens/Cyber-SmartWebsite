@@ -28,8 +28,8 @@ header {
 
 .logo {
   z-index: 0;
-  width: 4vw;
-  height: 4vw;
+  width: 8vw;
+  height: 8vw;
   margin-left: 20px;
   object-fit: cover;
   padding: 15px;
@@ -625,7 +625,7 @@ hr.divideTitle {
     height: 100px;
   }
   .about, .problem, .articles {
-   padding: 2.5%;
+   padding: 5%;
   }
 
   .outroBox {
