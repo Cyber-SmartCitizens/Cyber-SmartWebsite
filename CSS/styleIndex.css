@@ -21,15 +21,15 @@ header {
   position: absolute;
   width: 100%;
   position: sticky;
-  top: 2vw;
+  top: 4vw;
   z-index: 200;
 }
 
 
 .logo {
   z-index: 0;
-  width: 125px;
-  height: 125px;
+  width: 4vw;
+  height: 4vw;
   margin-left: 20px;
   object-fit: cover;
   padding: 15px;
@@ -45,7 +45,7 @@ header {
 }
 
 header h1 {
-  font-size: clamp(7.5px, 2vw, 15px);
+  font-size: clamp(10px, 4vw, 20px);
   color: white;
 }
 
@@ -65,7 +65,7 @@ header nav {
 
 header nav a {
   text-decoration: none;
-  font-size: clamp(7.5px, 2vw, 15px);
+  font-size: clamp(10px, 4vw, 20px);
   font-weight: 600;
   padding: 8px 16px;
   border-radius: 100px;
@@ -112,7 +112,7 @@ header nav.hover > a:not(:hover) {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: clamp(60px, 2vw, 120px);
+  font-size: clamp(60px, 4vw, 120px);
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
   pointer-events: none;
@@ -124,7 +124,7 @@ header nav.hover > a:not(:hover) {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #d3f4ea;
-  font-size: clamp(60px, 2vw, 1200px);
+  font-size: clamp(60px, 4vw, 1200px);
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
   pointer-events: none;
@@ -140,20 +140,20 @@ header nav.hover > a:not(:hover) {
 }
 
 .sectionTitle {
-  font-size: clamp(15px, 10vw, 30px);
+  font-size: clamp(15px, 4vw, 30px);
   font-weight: 600;
 }
 
 .missionBlurb {
   margin-top: 25px;
-  font-size: clamp(10px, 2vw, 20px);
+  font-size: clamp(10px, 4vw, 20px);
   width: 40%;
   padding-left: 20px;
   margin-bottom: 30px;
 }
 
 .learnMore {
-  font-size: clamp(7.5px, 2vw, 15px);
+  font-size: clamp(7.5px, 4vw, 15px);
   margin-top: 30px;
   color: #86dbc0;
   font-weight: 600;
@@ -209,12 +209,12 @@ header nav.hover > a:not(:hover) {
 }
 
 .titleBox h1 {
-  font-size: clamp(12.5px, 2vw, 25px);
+  font-size: clamp(12.5px, 4vw, 25px);
   font-weight: 600;
 }
 
 .paragraphBox p {
-  font-size: clamp(7.5px, 2vw, 15px);
+  font-size: clamp(7.5px, 4vw, 15px);
 }
 
 hr.divideSec {
@@ -273,7 +273,7 @@ hr.divideTitle {
 }
 
 .infoTxt {
-  font-size: clamp(15px, 2vw, 25px);
+  font-size: clamp(15px, 4vw, 25px);
   color: white;
 }
 
@@ -291,7 +291,7 @@ hr.divideTitle {
 
 .problemBlurb {
   margin-top: 25px;
-  font-size: clamp(10px, 2vw, 20px);
+  font-size: clamp(10px, 4vw, 20px);
   width: 40%;
   padding-left: 20px;
   margin-bottom: 30px;
@@ -319,12 +319,12 @@ hr.divideTitle {
 }
 
 .titleBoxTwo h1 {
-  font-size: clamp(12.5px, 2vw, 25px);
+  font-size: clamp(12.5px, 4vw, 25px);
   font-weight: 600;
 }
 
 .paragraphBoxTwo {
-  font-size: clamp(7.5px, 2vw, 15px);
+  font-size: clamp(7.5px, 4vw, 15px);
 }
 
 .BoxTwo:hover {
@@ -344,12 +344,12 @@ hr.divideTitle {
 .highlightTwo, .inLineLink {
   color: #78ffd9;
   font-weight: 600;
-  font-size: clamp(7.5px, 2vw, 15px);
+  font-size: clamp(7.5px, 4vw, 15px);
   text-decoration: none;
 }
 
 .sourceTxt {
-  font-size: clamp(5px, 2vw, 7.5px);
+  font-size: clamp(5px, 4vw, 7.5px);
   color: #dedede;
   text-decoration: none;
 }
@@ -370,7 +370,7 @@ hr.divideTitle {
 
 .articleBlurb {
   margin-top: 25px;
-  font-size: clamp(10px, 2vw, 20px);
+  font-size: clamp(10px, 4vw, 20px);
   width: 40%;
   padding-left: 20px;
   margin-bottom: 30px;
@@ -424,14 +424,14 @@ hr.divideTitle {
 }
 
 .description {
-  font-size: clamp(8px, 2vw, 16px);
+  font-size: clamp(8px, 4vw, 16px);
   color: white;
   text-align: normal;
 }
 .button {
   width: 100%;
   border: none;
-  font-size: clamp(5px, 2vw, 15px);
+  font-size: clamp(5px, 4vw, 15px);
   color: #fff;
   padding: 8px 16px;
   background-color: #66a792;
@@ -456,7 +456,7 @@ hr.divideTitle {
 }
 .swiper-navBtn::before,
 .swiper-navBtn::after {
-  font-size: clamp(10px, 2vw, 20px);
+  font-size: clamp(10px, 4vw, 20px);
 }
 .swiper-button-next {
   right: 0;
@@ -507,7 +507,7 @@ hr.divideTitle {
 }
 
 #modal h2{
-  font-size: clamp(15px, 2vw, 25px);
+  font-size: clamp(15px, 4vw, 25px);
 }
 
 #modal::backdrop {
@@ -519,7 +519,7 @@ hr.divideTitle {
 .buttonClose {
   width: fit-content;
   border: none;
-  font-size: clamp(5px, 2vw, 10px);
+  font-size: clamp(5px, 4vw, 10px);
   color: #fff;
   padding: 8px 16px;
   background-color: #66a792;
@@ -557,17 +557,17 @@ hr.divideTitle {
 }
 
 .outroText h1 {
-  font-size: clamp(5px, 2vw, 10px);
+  font-size: clamp(5px, 4vw, 10px);
 }
 
 .outroText h3 {
-  font-size: clamp(5px, 2vw, 7.5px);
+  font-size: clamp(5px, 4vw, 7.5px);
   color: #3e6e5fbf;
   font-weight: normal;
 }
 
 .outroText h2, .outroText a  {
-  font-size: clamp(5px, 2vw, 7.5px);
+  font-size: clamp(5px, 4vw, 7.5px);
   font-weight: normal;
   text-decoration: none;
   color: #3e6e5f;
@@ -623,6 +623,9 @@ hr.divideTitle {
   .logo {
     width: 100px;
     height: 100px;
+  }
+  .about, .problem, .articles {
+   padding: 2.5%;
   }
 
   .outroBox {
