@@ -21,15 +21,15 @@ header {
   position: absolute;
   width: 100%;
   position: sticky;
-  top: calc(25px + 1vw);
+  top: calc(25px + 2vw);
   z-index: 200;
 }
 
 
 .logo {
   z-index: 0;
-  width: calc(100px + 1vw);
-  height: calc(100px + 1vw);
+  width: calc(75px + 2.5vw);
+  height: calc(75px + 2.5vw);
   margin-left: 20px;
   object-fit: cover;
   padding: 15px;
@@ -60,13 +60,14 @@ header h1 {
 header nav {
   margin-top: 26px;
   display: flex;
-  gap: calc(10px + 1vw);
+  align-items: center;
+  gap: clamp(7.5px, 1vw, 25px);
   justify-content: space-evenly;
 }
 
 header nav a {
   text-decoration: none;
-  font-size: calc(7.5px + 1vw);
+  font-size: clamp(10px, 1.5vw, 45px);;
   font-weight: 600;
   padding: 8px 16px;
   border-radius: 100px;
@@ -93,6 +94,7 @@ header nav.hover > a:not(:hover) {
   position: relative;
   overflow: hidden;
   justify-content: center;
+  align-items: center;
 }
 
 .home img {
@@ -109,14 +111,13 @@ header nav.hover > a:not(:hover) {
 
 .home .title {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  
   color: white;
-  font-size: clamp(40px, 6vw, 80px);
+  font-size: clamp(40px, 8vw, 80px);
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
-  pointer-events: none;
+  pointer-events: none; 
+  width: 100%;
 }
 
 .home .downArrow {
@@ -125,14 +126,14 @@ header nav.hover > a:not(:hover) {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #d3f4ea;
-  font-size: clamp(60px, 4vw, 1200px);
+  font-size: clamp(40px, 8vw, 80px);
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
   pointer-events: none;
 }
 
 .about {
-  padding: 100px;
+  padding: clamp(40px, 8vw, 80px);
   margin-top: -10px;
   background-image: linear-gradient(to bottom, #003329 50%, #656565);
   color: white;
@@ -141,21 +142,21 @@ header nav.hover > a:not(:hover) {
 }
 
 .sectionTitle {
-  font-size: clamp(15px, 4vw, 30px);
+  font-size: clamp(7.5px, 4dvh, 30px);
   font-weight: 600;
 }
 
 .missionBlurb {
-  margin-top: 25px;
-  font-size: clamp(10px, 4vw, 20px);
+  margin-top: clamp(10px, 8vw, 25px);
+  font-size: clamp(6px, 4dvh, 24px);
   width: 40%;
-  padding-left: 20px;
-  margin-bottom: 30px;
+  padding-left: clamp(20px, 2vw, 40px);
+  margin-bottom: 24px;
 }
 
 .learnMore {
-  font-size: clamp(7.5px, 4vw, 15px);
-  margin-top: 30px;
+  font-size: clamp(5px, 4dvh, 15px);
+  margin-top: clamp(10px, 1.25vw, 20px);
   color: #86dbc0;
   font-weight: 600;
   text-decoration: none;
@@ -166,8 +167,8 @@ header nav.hover > a:not(:hover) {
 }
 
 .OneBox {
-  margin-top: 25px;
-  padding: 10px;
+  margin-top: clamp(5px, 2vw, 40px);
+  padding: clamp(5px, 2vw, 20px);
   width: 100%;
   height: fit-content;
   display: flex;
@@ -222,7 +223,7 @@ hr.divideSec {
   width: 100%;
   border: 1px solid #ffff;
   border-radius: 8px;
-  margin-bottom: 50px;
+  margin-bottom: clamp(10px, 2vw, 40px);
   margin-top: 150px;
 }
 
@@ -230,43 +231,43 @@ hr.divide {
   width: 50%;
   border: 0.5px dashed #ffff;
   border-radius: 8px;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  margin-bottom: clamp(10px, 2vw, 40px);
+  margin-top: clamp(10px, 2vw, 40px);
 }
 
 hr.divideBlack {
   width: 100%;
   border: 1px solid #000000;
   border-radius: 8px;
-  margin-bottom: 20px;
-  margin-top: 5px;
+  margin-bottom: clamp(5px, 2vw, 20px);
+  margin-top: clamp(0px, 2vw, 5px);
 }
 
 hr.divideCard {
   width: 100%;
   border: 0.5px dashed #ffff;
   border-radius: 8px;
-  margin-bottom: 10px;
-  margin-top: 25px;
+  margin-bottom: clamp(10px, 2vw, 25px);
+  margin-top: clamp(10px, 2vw, 25px);
 }
 
 hr.divideMed{
   width: auto;
   border: 0.5px dashed rgb(252, 243, 224);
   border-radius: 8px;
-  margin-bottom: 25px;
-  margin-top: 12.5px;
+  margin-bottom: clamp(10px, 2vw, 25px);
+  margin-top: clamp(5px, 2vw, 20px);
 }
 
 hr.divideSmall {
-  margin-top: 20px;
+  margin-top: clamp(10px, 2vw, 20px);
   border: 1px solid #4aa185;
   border-radius: 8px;
   opacity: 75%;
 }
 
 hr.divideTitle {
-  margin-top: 5px;
+  margin-top: clamp(0px, 2vw, 5px);
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
   opacity: 75%;
@@ -580,7 +581,7 @@ hr.divideTitle {
 .outroLogo {
   width: 100px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .slide-content {
     margin: 0 10px;
   }
@@ -589,7 +590,7 @@ hr.divideTitle {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 800px) {
   .OneBox,
   .TwoBox {
     flex-direction: column;
@@ -606,6 +607,7 @@ hr.divideTitle {
   .problemBlurb,
   .articleBlurb {
     width: 100%;
+    padding: 0  clamp(12px, 2vw, 48px);
   }
 
   hr.divide {
@@ -627,8 +629,15 @@ hr.divideTitle {
     justify-content: space-evenly;
   }
 
-  .logo,.logoBox {
+  .logo, .logoBox {
     display: none;
+  }
 
+  header nav {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(90, 220, 180, 0.75);
+    padding: 10px;
+    border-radius: 100px;
   }
 }
