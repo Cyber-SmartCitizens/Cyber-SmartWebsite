@@ -1,0 +1,359 @@
+body {
+  background-image: linear-gradient(white, #14005c);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 0px;
+    padding: 0 5%;
+    position: absolute;
+    width: 100%;
+    position: sticky;
+    top: calc(25px + 2vw);
+    z-index: 200;
+  }
+.logo {
+  z-index: 0;
+  width: calc(75px + 2.5vw);
+  height: calc(75px + 2.5vw);
+  margin-left: 20px;
+  object-fit: cover;
+  padding: 15px;
+  background-image: linear-gradient(#6752b360 70%, rgba(255, 255, 255, 0.534));
+  border-radius: 125px;
+  transition: box-shadow 0.25s;
+  margin-top: 100px;
+}
+
+.logo:hover {
+  background-image: linear-gradient(#6752b3a7 20%, rgba(255, 255, 255, 0.534));
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+header h1 {
+  font-size: clamp(10px, 2vw, 20px);
+  color: white;
+}
+
+.focalTxt {
+  color: #8c78ff;
+  background-color: rgba(23, 6, 45, 0.5);
+  border-radius: 25px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+header nav {
+  margin-top: 26px;
+  display: flex;
+  align-items: center;
+  gap: clamp(7.5px, 1vw, 25px);
+  justify-content: space-evenly;
+}
+
+header nav a {
+  text-decoration: none;
+  font-size: calc(6px + 1vw);
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 100px;
+  transition: 0.3s;
+  color: white;
+}
+
+header nav a.active {
+  background: rgb(30, 160, 100);
+}
+
+header nav a:hover {
+  background: rgb(30, 160, 100);
+}
+
+header nav.hover > a:not(:hover) {
+  background: none;
+}
+
+.home {
+  display: flex;
+  height: 100dvh;
+  background: linear-gradient(-15deg, #ffc37f 30%, rgb(241, 170, 255));
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.home img {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  width: 100%;
+  pointer-events: none;
+}
+
+.home img.leaf4, img.leaf3 {
+  top: 0;
+}
+
+.home .title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: clamp(80px, 2vw, 120px);
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  pointer-events: none;
+}
+
+.home .downArrow {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #f4d3ef;
+  font-size: clamp(80px, 2vw, 120px);
+  text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  pointer-events: none;
+}
+
+.contact {
+  padding: 100px;
+  background-image: linear-gradient(to bottom, #003439 50%, #656565 );
+  color: white;
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionTitle {
+  font-size:  clamp(30px, 10vw, 60px);
+  font-weight: 600;
+}
+
+
+hr.divideSec {
+  width: auto;
+  border: 1px solid #ffff;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  margin-top: 150px;
+}
+
+hr.divide {
+  width: 50%;
+  border: 0.5px dashed #ffff;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+
+}
+
+hr.divideBlack {
+  width: auto;
+  border: 1px dashed rgb(170, 155, 126);
+  border-radius: 8px;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+
+hr.divideSmall {
+  margin-top: 20px;
+  border: 1px solid #4aa185;
+  border-radius: 8px;
+  opacity: 75%;
+}
+
+.sectionTitle {
+  font-size: calc(20px + 1vw);
+  font-weight: 600;
+}
+
+.OneBox {
+  margin-top: 0px;
+  padding: 10px;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.BoxOne {
+  width: 100%;
+  height: 100%;
+  margin-left: 25px;
+  margin-right: 25px;
+  padding-bottom: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 40px;
+  border-top: none;
+  background-color: #003439;
+  transition: box-shadow 1s, border-bottom-left-radius 0.25s,
+    border-bottom-right-radius 0.25s, background-color 2s;
+}
+
+.BoxOne:hover {
+  box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.5);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-image: linear-gradient(#003439 25%, rgba(255, 255, 255, 0.15));
+}
+
+.titleBox {
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.paragraphBox {
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 25px;
+}
+
+.titleBox a {
+  font-size:  calc(12px + 1vw);
+  font-weight: 600;
+}
+
+.paragraphBox a {
+  font-size:  calc(px + 1vw)8;
+}
+
+.logoContact {
+  width: 25%;
+}
+
+.linkButton {
+  padding: 20px;
+  margin-left: 15px;
+  margin-top: 15px;
+  font-size: calc(4px + 1vw);
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  color: white;
+  background-color: #007681;
+  transition: background-color 0.25s, box-shadow 0.25s;
+}
+
+.linkButton:hover {
+  background-color: #00a1af;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.outro{
+  background-color: rgb(255, 255, 255);
+}
+
+.outroBox {
+  padding-top: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 40px;
+  align-items: center;
+}
+
+.outroText{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 5px;
+}
+
+.outroText h1 {
+  font-size: clamp(10px, 5vw, 20px);
+}
+
+.outroText h3 {
+  font-size: clamp(10px, 5vw, 15px);
+  color: #3e6e5fbf;
+  font-weight: normal;
+}
+
+.outroText h2, .outroText a {
+  font-size: clamp(10px, 5vw, 15px);
+  font-weight: normal;
+  text-decoration: none;
+  color: #3e6e5f;
+}
+
+.outroText a:hover {
+  text-decoration: underline;
+}
+.outroLogo {
+  width: 100px;
+}
+
+@media screen and (max-width: 800px) {
+  .contact {
+  padding: 20px;
+  }
+
+  header nav a {
+    text-decoration: none;
+    font-weight: 600;
+    padding: 4px 8px;
+    border-radius: 50px;
+    transition: 0.3s;
+    color: white;
+  }
+
+
+
+
+  .OneBox{
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    margin: 0px;
+    padding: 10px;
+  }
+  .BoxOne {
+    margin: 0px;
+    border-radius: 20px;
+  }
+  header {
+    justify-content: space-evenly;
+  }
+
+  .about {
+    padding: 0px;
+  }
+  .logo, .logoBox {
+    display: none;
+  }
+  .outroBox {
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    text-align: center;
+  }
+
+
+  header nav {
+    width: fit-content;
+    height: fit-content;
+    background-color: rgba(90, 220, 180, 0.75);
+    padding: 10px;
+    border-radius: 100px;
+  }
+}
