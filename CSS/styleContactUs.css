@@ -317,11 +317,6 @@ hr.divideSmall {
     color: white;
   }
 
-  .linkButton {
-    fontsize: 32px;
-    border-radius: 25px;
-  }
-
 
 
 
@@ -335,7 +330,6 @@ hr.divideSmall {
   .BoxOne {
     margin: 0px;
     border-radius: 20px;
-    padding: 20px;
   }
   header {
     justify-content: space-evenly;
@@ -361,5 +355,23 @@ hr.divideSmall {
     background-color: rgba(90, 220, 180, 0.75);
     padding: 10px;
     border-radius: 100px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .OneBox{
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    margin: 0px;
+    padding: 10px;
+  }
+  .BoxOne {
+    margin: 0px;
+    border-radius: 20px;
+  }
+
+  .linkButton {
+    font-size: 16px;
   }
 }
