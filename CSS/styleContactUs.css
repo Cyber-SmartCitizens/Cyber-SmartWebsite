@@ -318,7 +318,8 @@ hr.divideSmall {
   }
 
   .linkButton {
-    fontsize: 20px
+    fontsize: 20px;
+    border-radius: 10px;
   }
 
 
@@ -334,6 +335,7 @@ hr.divideSmall {
   .BoxOne {
     margin: 0px;
     border-radius: 20px;
+    padding: 5px;
   }
   header {
     justify-content: space-evenly;
