@@ -70,7 +70,6 @@ closeModal6.addEventListener("click", () => {
   modal6.close();
 });
 
-
 const modal0 = document.querySelector(".modal0");
 const openModal0 = document.querySelector(".open-button0");
 const closeModal0 = document.querySelector(".close-button0");
@@ -82,4 +81,3 @@ openModal0.addEventListener("click", () => {
 closeModal0.addEventListener("click", () => {
   modal0.close();
 });
-
