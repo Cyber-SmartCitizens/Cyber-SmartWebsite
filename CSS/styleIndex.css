@@ -583,20 +583,25 @@ hr.divideTitle {
   width: 100px;
 }
 
+/* Base styles */
 .instructions {
   margin-top: 20px;
 }
+
 .instruction-step {
   margin-bottom: 20px;
 }
+
 .instruction-step h2 {
-  font-size: 1.2em;
+  font-size: calc(2vw + 16px); /* Dynamic font size based on viewport width */
   margin-bottom: 5px;
   color: #66a792;
 }
+
 .instruction-step p {
-  margin-left: 20px;
+  margin-left: 20px; /* Fixed margin */
 }
+
 
 @media screen and (max-width: 800px) {
   .slide-content {
