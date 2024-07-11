@@ -115,7 +115,7 @@ header nav.hover > a:not(:hover) {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: calc(40px + 2vw);
+  font-size: clamp(80px, 2vw, 120px);
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
   pointer-events: none;
@@ -127,7 +127,7 @@ header nav.hover > a:not(:hover) {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #d3f4ea;
-  font-size: calc(40px + 2vw);
+  font-size: clamp(80px, 2vw, 120px);
   text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
   text-align: center;
   pointer-events: none;
@@ -582,6 +582,22 @@ hr.divideTitle {
 .outroLogo {
   width: 100px;
 }
+
+.instructions {
+  margin-top: 20px;
+}
+.instruction-step {
+  margin-bottom: 20px;
+}
+.instruction-step h2 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #66a792;
+}
+.instruction-step p {
+  margin-left: 20px;
+}
+
 @media screen and (max-width: 800px) {
   .slide-content {
     margin: 0 10px;
